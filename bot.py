@@ -38,7 +38,7 @@ async def on_ready():
             await play_uvb_stream(vc)
         else:
             # Créer le canal "General" s'il n'existe pas
-            voice_channel = await guild.create_voice_channel("General")
+            voice_channel = await guild.create_voice_channel("ThePIP Day")
             vc = await voice_channel.connect()
 
             # Diffuser UVB-76
