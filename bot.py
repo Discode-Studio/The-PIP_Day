@@ -10,7 +10,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 # Variables globales
-uvb_stream_url = 'http://streams.printf.cc:8000/buzzer.ogg'  # URL du stream UVB-76
+uvb_stream_url = 'http://stream.priyom.org:8000/pip-day.ogg'  # URL du stream UVB-76
 
 # Fonction pour jouer le stream UVB-76
 async def play_uvb_stream(vc):
@@ -28,7 +28,7 @@ async def on_ready():
     # Parcourir tous les serveurs auxquels le bot est connecté
     for guild in bot.guilds:
         # Vérifier si un salon vocal "General" existe
-        voice_channel = discord.utils.get(guild.voice_channels, name="General")
+        voice_channel = discord.utils.get(guild.voice_channels, name="ThePIP Day")
         
         if voice_channel:
             # Connecter le bot au salon vocal
